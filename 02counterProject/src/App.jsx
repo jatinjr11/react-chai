@@ -18,7 +18,6 @@ function App() {
 
   return (
     <>
-      <h1>Ram Ram</h1>
       <h2>Counter Value: {count}</h2>
 
       <button onClick={addValue}>Add Value</button>
