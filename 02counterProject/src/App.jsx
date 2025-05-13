@@ -1,17 +1,29 @@
 import { useState } from 'react'
-import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const addValue = () => {
+    if(count < 20)
+    {
+      setCount(count + 1); // setCount((prevCount) => prevCount + 1)
+    }
+  }
+
+  const removeValue = () => {
+    if(count > 0){
+      setCount(count - 1); // setCount((prevCount) => prevCount - 1)
+    }
+  }
+
   return (
     <>
       <h1>Ram Ram</h1>
-      <h2>Counter Value: 5</h2>
+      <h2>Counter Value: {count}</h2>
 
-      <button>Add Value</button>
+      <button onClick={addValue}>Add Value</button>
       <br />
-      <button className="btn btn-primary">Remove Value</button>
+      <button onClick={removeValue}>Remove Value</button>
     </>
   )
 }
