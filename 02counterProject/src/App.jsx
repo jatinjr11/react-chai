@@ -1,18 +1,21 @@
 import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(1)
 
   const addValue = () => {
-    if (count < 20) {
+    // if (count < 20) {
       setCount(count + 1); // setCount((prevCount) => prevCount + 1)
-    }
+      setCount(count + 1); // setCount((prevCount) => prevCount + 1)
+      setCount(count + 1); // setCount((prevCount) => prevCount + 1)
+      setCount(count + 1); // setCount((prevCount) => prevCount + 1)
+    // }
   }
 
   const removeValue = () => {
-    if (count > 0) {
+    // if (count > 0) {
       setCount(count - 1); // setCount((prevCount) => prevCount - 1)
-    }
+    // }
   }
 
   return (
